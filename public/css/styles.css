@@ -1,3 +1,21 @@
+body{
+	/*min-height: 2000px;*/
+	padding-top: 50px;
+}
+
 .jumbotron{
-	background-color: gray;
+	background-image: url('../images/computer.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-color: rgba(255,255,255,0.3);
+}
+
+
+
+.jumbotron .white {
+	color: white;
+}
+
+footer {
+	background-color: orange;
 }
