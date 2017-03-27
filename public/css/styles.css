@@ -1,10 +1,10 @@
 body{
-	/*min-height: 2000px;*/
-	padding-top: 50px;
+	/*min-height: 2000px;
+	padding-top: 50px;*/
 }
 
 .jumbotron{
-	background-image: url('../images/computer.jpg');
+	background-image: url('../images/cloud.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-color: rgba(255,255,255,0.3);
@@ -16,6 +16,12 @@ body{
 	color: white;
 }
 
-footer {
-	background-color: orange;
+.footer1 {
+	background-color: rgba(233,130,26,0.8);
+	height: 50px;
+	padding-top: 10px;
+}
+
+.redColor {
+	color: red;
 }

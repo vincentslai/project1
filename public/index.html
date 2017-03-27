@@ -2,84 +2,54 @@
 <html>
 <head>
 	<title>Weather App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  
 </head>
-<body>
-	<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Vincent Corner</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About Me</a></li>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-	
+<body>	
 		<div class="jumbotron">
-			<h1 class="text-center white">Vincent Corner</h1>
+			<h1 class="text-center white">Weather App</h1>
 		</div>
 
-<div class="container">
-    <div class="col-md-4">
-    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sem in dui bibendum pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In risus sapien, convallis a pharetra eu, dapibus in felis. Vestibulum orci tellus, imperdiet a finibus nec, interdum ut tortor. Etiam malesuada interdum sapien. Vivamus mollis nibh at purus commodo, nec bibendum nibh condimentum. </P>
-    </div> <!-- end of col-md-4 -->
+    <div class="container">
+    <div class="col-md-12">
+        <h4>This Weather app is created with Bootstrap, OWM - Open Weather Map, AJAX and Javascript. </h4>
+    </div> <!-- col-md-12 intro -->
 
-    <div class="col-md-4">
-    <p>Duis vitae sem nec ligula fermentum tempus. Vivamus quis mattis magna. Vestibulum sagittis tellus pharetra scelerisque hendrerit. Nullam ac nulla vitae arcu luctus gravida et ac libero. Quisque dapibus tellus sed risus dapibus, sit amet consectetur ante maximus. Vestibulum sapien velit, malesuada non sollicitudin eu, tincidunt non magna. In accumsan mi sed sem tempor suscipit. Duis tellus turpis, euismod ac imperdiet in, dictum ut massa.</p>
-    </div> <!-- end of col-md-4-->
+    <div class="col-md-12">
+        <h2 class="text-center">Enter City Name: </h2>
+    </div>
 
-    <div class="col-md-4">
-    <p>Vestibulum vitae cursus sapien. Mauris sed tempus libero, ultricies rutrum felis. Vivamus pharetra lorem quam, et varius sem luctus a. Sed ut ornare urna. Maecenas sagittis volutpat libero, dignissim consequat massa feugiat et. Donec ornare est eu imperdiet semper. Mauris eget egestas lacus. Suspendisse non feugiat nibh, eu accumsan nisi. Nunc in molestie lorem, sagittis sollicitudin nisl. Duis risus neque, malesuada at convallis quis, fringilla sit amet elit. Nullam quis erat ut massa sagittis pellentesque.</p>
-    </div> <!--end of col-md-4-->
+    <div class="text-center col-md-12 form-group form-inline">
+      <input type="text" name ="city" id="city" class="form-control" placeholder="Enter City name">
+      <button id="submitWeather" class="btn btn-warning">Search</button>
+    </div> <!-- col-md-12 form -->
 
-    <div class="col-md-6">
-    <p>Sed a urna sed orci blandit interdum eget vitae sapien. Fusce rutrum in urna eget auctor. Aliquam consequat nulla metus, sed efficitur massa imperdiet nec. Vestibulum euismod euismod vulputate. Quisque lacus mi, feugiat in pellentesque sit amet, faucibus pretium mauris. Etiam at magna mauris. Pellentesque bibendum sem velit, vitae gravida velit volutpat nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eu eros at erat lacinia tristique at id sapien. Pellentesque rutrum ac lorem eu fringilla. Cras eget porta dui. Vivamus vitae tellus vitae orci porta imperdiet.</p>
-    </div> <!--end of col-md-6 -->
-
-    <div class="col-md-6">
-    <p>Suspendisse sit amet mi nisl. Aenean congue eget velit non vulputate. Vivamus fermentum ornare nisi quis dictum. Cras eros nisi, hendrerit ac sollicitudin id, porta sit amet turpis. Sed consectetur turpis placerat quam sodales scelerisque. Vivamus vitae ante a lacus sollicitudin rutrum. In vehicula, ante vitae commodo tempor, urna ante aliquam nisl, ut ultricies elit urna eu magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ut porta ex.</p>
-  </div> <!-- end of col-md-6-->
+    <div class="col-md-12 text-center">
+      <span id="errorMessage" class=" redColor"></span>
+      <span id="searchResult"></span>
+       
+    </div>
+    
+    
 
 </div> <!--end of container -->
 
-<footer >
-  <div class="footer navbar-fixed-bottom">
+<footer>
+  <div class="footer1 navbar-fixed-bottom">
     <!-- ::before -->
     <p class="text-center">Vincent Corner Copyright</p>
     <!-- ::after -->
   </div>
 </footer>
-</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+</body>
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/weather.js"></script>
 
 </html>
